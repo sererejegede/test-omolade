@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Nunito;
+  src: url('assets/fonts/Nunito-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Nunito;
+  src: url('assets/fonts/Nunito-Bold.ttf');
+  font-weight: 700;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Nunito, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 800px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
+.sub-heading {
+  color: brown;
+  text-decoration: underline;
+}
+
+.section-text {
+  line-height: 28px;
+}
+
+.emphasis {
+  color: #a52a2a;
+}
+
+section:not(:first-of-type) {
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid;
+}
+
+code {
+  color: #a52a2a;
+  background-color: #f2cece;
+  padding: 1px 6px;
+  border-radius: 8px;
+}
+
+.tip {
+  max-width: 450px;
+  margin: 16px auto;
+  font-style: italic;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 1px 4px 16px rgba(0, 0, 0, .2);
+}
+.tip p {
+  margin-top: 0;
+}
+
+img {
+  height: 120px;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 40px;
+}
+img + p {
+  font-size: 16px;
+  text-align: right;
+  font-style: italic;
+  margin-top: 0;
+}
+
+form {
+  padding: 16px;
+  background-color: white;
+  width: 80%;
+}
+
+input {
+  padding: 4px 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td, table th {
+  padding: 2px 4px;
+  border: 1px solid;
+}
+
+blockquote {
+  border-left: 6px solid #a52a2a;
+  padding-left: 16px;
+}
