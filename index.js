@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const data = Object.fromEntries(new FormData(formElement));
+    if (!data || !data.name || !data.date) return
+
     const tr = `<tr><td>${data.name}</td><td>${data.date}</td><td>${data.color}</td></tr>`;
 
     tableBody.insertAdjacentHTML('beforeend', tr);
